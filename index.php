@@ -13,7 +13,7 @@
 	$moisCours = date('m');
 	$jourCours = date('d');
 
-	$picturesPath = '/sitewebcam/pictures/interval_snapshots/';
+	$picturesPath = '/webcam/pictures/interval_snapshots/';
 	$lastSnapshot = 'lastsnap.jpg';
 
 ?>
@@ -28,18 +28,19 @@
 
 	<section >
 		<div class='snapshot'>
-			<img src="<?=$picturesPath.$lastSnapshot?>" alt='Last snapshot' />
+			<!-- <img src="<?=$picturesPath.$lastSnapshot?>" alt='Last snapshot' /> -->
+			<img name="Webcam Lac" src="http://webcamlac.zapto.org:8082/"  alt="Vue sur le lac" title="Le lac" />
 		</div>
 	</section>
-	<div class='legend'>
+	<!-- <div class='legend'>
 		<p>Date : <span id='snapDate'></span></p>
-	</div>
+	</div> -->
 
 	
-	<div>
+	<!-- <div>
 		<p>LOG : </p>
 		<p></p>
-	</div>
+	</div> -->
 
 </body>
 
