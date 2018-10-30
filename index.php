@@ -41,33 +41,14 @@
 			</div>
 		</div>
 
+		<!-- Conteneur Image webcam -->
 		<div class='fullpicture-container'>
 			<div class='snapshot'>
 				<img name="Webcam Lac" src="http://webcamlac.zapto.org:8082/"  alt="Vue sur le lac" title="Direct" />
 			</div>
 		</div>
 
-
-
-
 	</div>
 
-	<!-- <div><h2>En direct</h2></div>
-	<section>
-		<div class='snapshot'>
-			<img name="Webcam Lac" src="http://webcamlac.zapto.org:8082/"  alt="Vue sur le lac" title="Direct" />
-		</div>
-	</section> -->
-
 </body>
-
-<!-- Contenu -->
-	<!-- <div class="corps flex-container-rows-center">
-
-		<section class="streaming flex-container-columns">
-			<img name="Webcam Lac" src="http://79.90.247.95:8081/"  alt="Vue sur le lac" title="Le lac" />
-		</section>
-	</div> -->
-
-
 </html>
