@@ -32,6 +32,10 @@ body {
     display: flex;
     
     flex-direction: column;
+    background-color: #565554;
+
+    color: #fa8334;
+    font-family: josefin_sansregular, sans-serif;
 }
 
 .flex-container-center {
@@ -77,14 +81,14 @@ body {
 /* ------------------------------------------------------------ */
 
 .title {
-    background-color: #4a69bd;
-    font-family: josefin_sansregular, sans-serif;
+    background-color: #0b8ca5;
+    
     /* flex-grow: 1; */
     padding-top: 10px;
 }
 
 .title>h1 {
-    color: #78e08f;
+    color: #ff715b;
     font-size:3em;
 }
 
@@ -92,20 +96,47 @@ body {
 /*          L E   C O R P S                                     */
 /* ------------------------------------------------------------ */
 
-section {
-    display: flex;
-    justify-content: space-around;
-    /* border: 2px red solid; */
+.title-bar {
+    height: 45px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-section div {
-    /* background: blue; */
+.title-bar h2 {
+    font-size: 20pt;
+    margin-left: 15px;
+}
+
+
+.corps {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.fullpicture-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fullpicture-container div {
     width: 100%;
-    /* height: 45vw; */
     text-align: center;
 }
 
-section div img {
+.fullpicture-container div img {
     max-width: 100%;
-    max-height: 100%;
+}
+
+
+
+/* ------------------------------------------------------------ */
+/*          L E S   B O U T T O N S                             */
+/* ------------------------------------------------------------ */
+
+.switchButton {
+    width: 45px;
+    /* background-color: aquamarine; */
+    background: url(../pictures/icons/switch.svg);
+    background-size: 45px 45px;
 }

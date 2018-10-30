@@ -26,21 +26,38 @@
 		<H1>Webcam du Lac</H1>
 	</div>
 
-	<section >
-		<div class='snapshot'>
-			<!-- <img src="<?=$picturesPath.$lastSnapshot?>" alt='Last snapshot' /> -->
-			<img name="Webcam Lac" src="http://webcamlac.zapto.org:8082/"  alt="Vue sur le lac" title="Le lac" />
-		</div>
-	</section>
-	<!-- <div class='legend'>
-		<p>Date : <span id='snapDate'></span></p>
-	</div> -->
+	<div>
 
-	
-	<!-- <div>
-		<p>LOG : </p>
-		<p></p>
-	</div> -->
+		<!-- Barre titre -->
+		<div class='flex-container-rows title-bar corps'>
+
+			<!-- Bouton switch -->
+			<div class='switchButton'>
+			</div>
+
+			<!-- Titre -->
+			<div style='align-self: center;'>
+				<h2>En direct</h2>
+			</div>
+		</div>
+
+		<div class='fullpicture-container'>
+			<div class='snapshot'>
+				<img name="Webcam Lac" src="http://webcamlac.zapto.org:8082/"  alt="Vue sur le lac" title="Direct" />
+			</div>
+		</div>
+
+
+
+
+	</div>
+
+	<!-- <div><h2>En direct</h2></div>
+	<section>
+		<div class='snapshot'>
+			<img name="Webcam Lac" src="http://webcamlac.zapto.org:8082/"  alt="Vue sur le lac" title="Direct" />
+		</div>
+	</section> -->
 
 </body>
 
