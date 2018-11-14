@@ -141,6 +141,14 @@ body {
     cursor: pointer;
 }
 
+.switchButton:hover {
+    width: 45px;
+    /* background-color: aquamarine; */
+    background: url(../pictures/icons/switch_hover.svg);
+    background-size: 45px 45px;
+    cursor: pointer;
+}
+
 /* ------------------------------------------------------------ */
 /*          L E S   E T A T S                                   */
 /* ------------------------------------------------------------ */
