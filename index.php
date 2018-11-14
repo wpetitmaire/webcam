@@ -13,7 +13,7 @@
 		$moisCours = date('m');
 		$jourCours = date('d');
 
-		$picturesPath = '/webcam/pictures/interval_snapshots/';
+		$picturesPath = '/webcam/pictures/intervalSnapshots/';
 		$lastSnapshot = 'lastsnap.jpg';
 
 	?>
