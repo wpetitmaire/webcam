@@ -1,10 +1,13 @@
-jQuery(document).ready(() => {
+$(document).ready(() => {
 
     // Application des évènements.
     jQuery('.switchButton').on('click', () => {
         switchAction();
     })
 
+    jQuery('#imgLive').on("error", function() {
+        alert('ERREUR IMAGE');
+    })
 })
 
 const readingmode = {
