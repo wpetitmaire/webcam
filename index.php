@@ -3,8 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Webcam lac</title>
-		<link rel="stylesheet" href="./styles/reset.css">
+		<!-- <link rel="stylesheet" href="./styles/reset.css"> -->
 		<link rel="stylesheet" href="./styles/positionnement.css">
+		<link rel="stylesheet" href="./libs/mdl/material.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	</head>
 
 	<?php
@@ -55,5 +57,6 @@
 
 	<script src='./libs/jquery/jquery-3.3.1.min.js'></script>
 	<script src='./scripts/main.js'></script>
+	<script src="./libs/mdl/material.min.js"></script>
 
 </html>

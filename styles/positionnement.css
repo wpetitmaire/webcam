@@ -82,14 +82,13 @@ body {
 
 .title {
     background-color: #0b8ca5;
-    
-    /* flex-grow: 1; */
-    padding-top: 10px;
+    height: 65px;
 }
 
 .title>h1 {
     color: #ff715b;
     font-size:3em;
+    font-family: josefin_sansregular, sans-serif;
 }
 
 /* ------------------------------------------------------------ */
@@ -105,6 +104,7 @@ body {
 .title-bar h2 {
     font-size: 20pt;
     margin-left: 15px;
+    font-family: josefin_sansregular, sans-serif;
 }
 
 
