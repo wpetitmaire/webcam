@@ -45,7 +45,7 @@
 
 			<!-- Conteneur Image webcam -->
 			<div class='fullpicture-container'>
-				<div class='snapshot'>
+				<div id='imageCamera'>
 					<img id='imgLive' name="Webcam Lac" src="http://78.196.89.58:8082/"  alt="Vue sur le lac" title="Direct" />
 					<img id='imgLastSnap' class='display-none' name='Dernière capture' src=<?=$picturesPath.$lastSnapshot?> />
 				</div>

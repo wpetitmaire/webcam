@@ -8,6 +8,16 @@ $(document).ready(() => {
     jQuery('#imgLive').on("error", function() {
         alert('ERREUR IMAGE');
     })
+
+    /* jQuery('#imgLive').on('load', () => {
+        jQuery(this).css({ display: 'block' });
+    }).each(() => {
+
+        if(this.complete)
+            jQuery(this).trigger('load');
+
+    }) */
+
 })
 
 const readingmode = {
