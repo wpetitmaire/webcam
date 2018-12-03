@@ -22,13 +22,13 @@ function switchAction() {
 
             jQuery('#imgLive').addClass('display-none');
             jQuery('#imgLastSnap').removeClass('display-none');
-            currentMode = readingmode.lastimage.id;
-            jQuery('#titreCam').html(readingmode.lastimage.title);
+            currentMode = readingmode.lastsnap.id;
+            jQuery('#titreCam').html(readingmode.lastsnap.title);
             break;
 
-        case readingmode.lastimage.id :
+        case readingmode.lastsnap.id :
 
-            console.log('   ##' + readingmode.lastimage.id)
+            console.log('   ##' + readingmode.lastsnap.id)
 
             jQuery('#imgLive').removeClass('display-none');
             jQuery('#imgLastSnap').addClass('display-none');

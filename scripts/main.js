@@ -1,7 +1,7 @@
 $(document).ready(() => {
 
     // Application des évènements.
-    jQuery('#switchButon').on('click', () => {
+    jQuery('#switchButton').on('click', () => {
         switchAction();
     })
 

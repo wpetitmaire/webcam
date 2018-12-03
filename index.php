@@ -34,7 +34,7 @@
 			<div class='flex-container-rows title-bar corps'>
 
 				<!-- Bouton switch -->
-				<div class='switchButton'>
+				<div class='switchButton' id="switchButton">
 				</div>
 
 				<!-- Titre -->
