@@ -1,13 +1,7 @@
 $(document).ready(() => {
-
-    // Application des évènements.
-    jQuery('#switchButton').on('click', () => {
-        switchAction();
-    })
-
-    jQuery('#imgLive').on("error", function() {
-        alert('ERREUR IMAGE');
-    })
+    
+    $('#menuButton').on('click', () => {$('#menuPanel').removeClass('closed')});
+    $('#menuCloseButton').on('click', () => {$('#menuPanel').addClass('closed')});
 
     $('#btnGetFichiers').on('click', () => {
         $.ajax({

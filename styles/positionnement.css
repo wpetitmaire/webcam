@@ -81,6 +81,13 @@ body {
 /* ------------------------------------------------------------ */
 
 .title {
+    width: 100%;
+    height: 50px;
+    background-color: #0b8ca5;
+}
+
+
+/* .title {
     background-color: #0b8ca5;
     height: 65px;
 }
@@ -89,7 +96,7 @@ body {
     color: #ff715b;
     font-size:3em;
     font-family: josefin_sansregular, sans-serif;
-}
+} */
 
 /* ------------------------------------------------------------ */
 /*          L E   C O R P S                                     */
@@ -103,7 +110,7 @@ body {
 
 .title-bar h2 {
     font-size: 20pt;
-    margin-left: 15px;
+    /* margin-left: 15px; */
     font-family: josefin_sansregular, sans-serif;
 }
 
@@ -128,6 +135,42 @@ body {
     max-width: 100%;
 }
 
+/* ------------------------------------------------------------ */
+/*          M E N U                                             */
+/* ------------------------------------------------------------ */
+
+.menu {
+    width: 300px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 1;
+    background-color: #0b8ca5;
+    overflow-x: hidden;
+    padding: 0px 20px 0px 20px;
+    transition: 0.5s;
+}
+
+.menu .closebtn {
+    font-size: 35px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 25px;
+    color: inherit;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.menu.closed {
+    left: -300px;
+}
 
 /* ------------------------------------------------------------ */
 /*          L E S   B O U T T O N S                             */
@@ -145,6 +188,14 @@ body {
     width: 45px;
     /* background-color: aquamarine; */
     background: url(../pictures/icons/switch_hover.svg);
+    background-size: 45px 45px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 45px;
+    /* background-color: aquamarine; */
+    background: url(../pictures/icons/menu.svg);
     background-size: 45px 45px;
     cursor: pointer;
 }
