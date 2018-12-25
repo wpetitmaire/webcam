@@ -38,6 +38,10 @@ body {
     font-family: josefin_sansregular, sans-serif;
 }
 
+body > * {
+    box-sizing: border-box; 
+}
+
 .flex-container-center {
     display: -ms-flexbox;
 	display: -webkit-flex;
@@ -84,19 +88,9 @@ body {
     width: 100%;
     height: 50px;
     background-color: #0b8ca5;
+    padding-left: 20px;
+    margin-bottom: 20px;
 }
-
-
-/* .title {
-    background-color: #0b8ca5;
-    height: 65px;
-}
-
-.title>h1 {
-    color: #ff715b;
-    font-size:3em;
-    font-family: josefin_sansregular, sans-serif;
-} */
 
 /* ------------------------------------------------------------ */
 /*          L E   C O R P S                                     */
@@ -104,7 +98,6 @@ body {
 
 .title-bar {
     height: 45px;
-    margin-top: 15px;
     margin-bottom: 15px;
 }
 
@@ -113,7 +106,6 @@ body {
     /* margin-left: 15px; */
     font-family: josefin_sansregular, sans-serif;
 }
-
 
 .corps {
     padding-left: 20px;
@@ -156,17 +148,29 @@ body {
     font-size: 35px;
 }
 
+.menu .element {
+    transition: 0.3s;
+}
+
+.menu .element:hover {
+    color: #f1f1f1;
+}
+
 .menu a {
     text-decoration: none;
     font-size: 25px;
     color: inherit;
+    padding-left: 20px;
     transition: 0.3s;
 }
 
 .menu a:hover {
     color: #f1f1f1;
     text-decoration: none;
+    padding-left: 30px;
 }
+
+
 
 .menu.closed {
     left: -300px;
@@ -200,10 +204,70 @@ body {
     cursor: pointer;
 }
 
+.play-icon {
+    width: 45px;
+    /* background-color: aquamarine; */
+    background: url(../pictures/icons/play.svg);
+    background-size: 45px 45px;
+    /* cursor: pointer; */
+}
+
 /* ------------------------------------------------------------ */
 /*          L E S   E T A T S                                   */
 /* ------------------------------------------------------------ */
 
 .display-none {
     display: none;
+}
+
+/* ------------------------------------------------------------ */
+/*          B U T T O N     G R O U P                           */
+/* ------------------------------------------------------------ */
+
+.button-group {
+    margin-left: 20px;
+    height: 30px;
+}
+
+.button-group button {
+    width: 70px;
+    background-color: transparent;
+    color: #fa8334;
+    border: 1px solid #fa8334;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button-group button:first-child {
+    border-right: none
+}
+
+.button-group button:last-child {
+    border-left: none
+}
+
+.button-group button:hover {
+    color: #0b8ca5;
+    border-color: #0b8ca5;
+}
+
+/* ------------------------------------------------------------ */
+/*          A R T I C L E S                                     */
+/* ------------------------------------------------------------ */
+
+.preview-list {
+    flex-wrap: wrap;
+    margin: 15px 15px 15px 15px;
+}
+
+.preview-list article {
+    width: 368px;
+    height: 272px;
+    border: 1px solid #fa8334;
+    margin: 5px 5px 5px 5px;
+}
+
+.preview-image {
+    width: 368px;
+    height: 272px;
 }
