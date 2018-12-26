@@ -26,18 +26,24 @@
 <!-- 368 x 272 -->
 
             <article class="flex-container-columns">
-                <!-- <h2>Mardi 2 décembre - 12h00</h2> -->
-                <div style="width: 368px; height: 272px">
+                <span>Mardi 2 décembre - 12h00</span>
+                <div >
                     <img src="./pictures/Tests/1.jpg" class="preview-image" >
                 </div> 
             </article>
 
             <article class="flex-container-columns">
-                <!-- <img src="./pictures/Tests/2.jpg" >  -->
+                <span>Mardi 2 décembre - 13h00</span>
+                <div >
+                    <img src="./pictures/Tests/2.jpg" class="preview-image" >
+                </div> 
             </article>
 
             <article class="flex-container-columns">
-                <!-- <img src="./pictures/Tests/3.jpg" >  -->
+                <span>Mardi 2 décembre - 15h00</span>
+                <div >
+                    <img src="./pictures/Tests/3.jpg" class="preview-image" >
+                </div> 
             </article>
 
         </div>
