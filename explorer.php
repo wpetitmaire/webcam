@@ -14,25 +14,33 @@
         <!-- barre de titre et menu latéral -->
         <?php include_once('header.php');?>
 
-        <div class="flex-container-rows button-group">
-            <button>Année</button>
-            <button>Mois</button>
-            <button>Jour</button>
-        </div>
+        <!-- <div class="flex-container-rows button-group">
+            <button id='yearButton'>Année</button>
+            <button id='monthButton'>Mois</button>
+            <button id='dayButton'>Jour</button>
+        </div> -->
 
 
-        <div class="flex-container-rows preview-list">
+        <div id="snapContainer" class="flex-container-rows preview-list">
 
 <!-- 368 x 272 -->
 
-            <article class="flex-container-columns">
+            <!-- <article class="flex-container-columns folder">
+                <span>2017</span>
+            </article>
+
+            <article class="flex-container-columns folder">
+                <span>2018</span>
+            </article> -->
+
+            <!-- <article class="flex-container-columns">
                 <span>Mardi 2 décembre - 12h00</span>
                 <div >
                     <img src="./pictures/Tests/1.jpg" class="preview-image" >
                 </div> 
-            </article>
+            </article> -->
 
-            <article class="flex-container-columns">
+            <!-- <article class="flex-container-columns">
                 <span>Mardi 2 décembre - 13h00</span>
                 <div >
                     <img src="./pictures/Tests/2.jpg" class="preview-image" >
@@ -44,7 +52,9 @@
                 <div >
                     <img src="./pictures/Tests/3.jpg" class="preview-image" >
                 </div> 
-            </article>
+            </article> 
+        
+        -->
 
         </div>
         

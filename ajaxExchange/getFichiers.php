@@ -13,14 +13,14 @@
             // Récupérer la liste des sous-éléments directes au point d'entrée
             $files = scandir($pathDir);
             if($files === false) {
-                return array("erreur" => "pathDir n\'est pas un répertoire.");
+                return array("erreur" => "pathDir n'est pas un répertoire.");
             }
 
         } catch (\Throwable $th) {
             return array("erreur" => $th);
         }
 
-        $ouputArrray = array();
+        $outputArray = array();
 
         // Parcourt des sous-éléments
         foreach($files as $element => $name) {
@@ -28,20 +28,25 @@
             if (in_array($name, array(".", "..", '.DS_Store', '.git', '.gitignore'))) 
                 continue;
 
+            $subDir['name'] = $name;
+
             if(!is_dir($pathDir . DIRECTORY_SEPARATOR . $name)) {
-                array_push($ouputArrray, $name);
+                // array_push($ouputArrray, $name);
             }
             else {
-                $ouputArrray["$name"] = dirListeningElements($pathDir . DIRECTORY_SEPARATOR . $name);
+                $subDir['content'] = dirListeningElements($pathDir . DIRECTORY_SEPARATOR . $name);
             }
+
+            array_push($outputArray, $subDir);
         }
 
-        return $ouputArrray;
+        return $outputArray;
     }
 
 
     $racine = '../';
     $snapshots_path = '../pictures/intervalSnapshots';
+    /* $snapshots_path = 'http://78.196.89.58/webcam/pictures/intervalSnapshots'; */
     $pointDepart = $_GET['_folder'];
     $listeEntrees = array();
 
@@ -60,6 +65,7 @@
             break;
     }
 
-    $listeEntrees = dirListeningElements($pointDepart);
-    print_r(json_encode($listeEntrees));
+    $sortie["result"] = dirListeningElements($pointDepart);
+
+    print_r(json_encode($sortie));
 ?>

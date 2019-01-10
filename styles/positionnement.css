@@ -33,8 +33,9 @@ body {
     display: flex;
     
     flex-direction: column;
-    background-color: #565554;
+    -webkit-flex-direction: column;
 
+    background-color: #565554;
     color: #fa8334;
     font-family: josefin_sansregular, sans-serif;
 }
@@ -85,6 +86,7 @@ body > * {
     display: flex;
     
     flex-direction: column;
+    -webkit-flex-direction: column;
 }
 
 /* ------------------------------------------------------------ */
@@ -241,9 +243,10 @@ body > * {
 
 .button-group button {
     width: 70px;
-    background-color: transparent;
+    background-color: #0b8ca5;
     color: #fa8334;
-    border: 1px solid #fa8334;
+    /* border: 1px solid #fa8334; */
+    border: none;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -257,8 +260,15 @@ body > * {
 }
 
 .button-group button:hover {
-    color: #0b8ca5;
-    border-color: #0b8ca5;
+    background-color: #0b7d95;
+}
+
+.button-group button:active {
+    background-color: #0e9cb7;
+}
+
+.button-group .selected {
+    background-color: #0a667a;
 }
 
 /* ------------------------------------------------------------ */
@@ -276,9 +286,27 @@ body > * {
     /* border: 1px solid #fa8334; */
     margin: 10px 10px 10px 10px;
     background-color: #0b8ca5;
+    cursor: pointer;
+}
+
+.preview-list article.folder {
+    width: 200px;
+    height: 100px;
+    margin: 10px 10px 10px 10px;
+    background-color: #0b8ca5;
+    font-size: 40px;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .preview-list article span {
+    align-self: center;
+    color: #fa8334;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.preview-list article.folder span {
     align-self: center;
     color: #fa8334;
     padding-top: 5px;
